@@ -1,7 +1,38 @@
 .lists {
+  display: flex;
+  flex-wrap: wrap;
   height: 240px;
-  border: 1px solid black;
+  padding: 20px;
+  background-color: @darkgrey;
+  // border: 1px solid black;
   box-sizing: border-box;
+}
+
+.lists__item {
+  position: relative;
+  width: 280px;
+  height: 40px;
+  padding-top: 13px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12.8px;
+  line-height: 10.24px;
+  color: @clearwhite;
+  background-color: @darkgrey;
+  border-bottom: 1px solid @transparentwhite;
+  box-sizing: border-box;
+}
+
+.lists__item:nth-child(5) {
+  border: none;
+}
+
+.lists__item::before {
+  content: "+";
+  position: absolute;
+  top: 15px;
+  left: 270px;
+  color: @white;
 }
 
 @media @desktop-widths {
