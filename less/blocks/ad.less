@@ -1,12 +1,26 @@
 .ad {
-  height: 452px;
+  // height: 452px;
   background-color: orange;
+  // box-sizing: border-box;
+}
+
+.ad__wrapper {
+  .container();
+  height: 452px;
+  border: 1px solid black;
   box-sizing: border-box;
 }
 
 @media @desktop-widths {
   .ad {
-    height: 310px;
+    // height: 310px;
     background-color: blue;
+  }
+
+  .ad__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 310px;
   }
 }

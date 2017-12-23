@@ -1,12 +1,25 @@
 .offers {
-  height: 725px;
+  // height: 725px;
   background-color: green;
+  // box-sizing: border-box;
+}
+
+.offers__wrapper{
+  .container();
+  height: 725px;
+  border: 1px solid black;
   box-sizing: border-box;
 }
 
 @media @desktop-widths {
   .offers {
-    height: 270px;
+    // height: 270px;
     background-color: purple;
+  }
+
+  .offers__wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 270px;
   }
 }
