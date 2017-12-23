@@ -1,13 +1,136 @@
 .recommend {
   // height: 1428px;
-  background-color: blue;
+  background-color: @lightgrey;
   // box-sizing: border-box;
 }
 
 .recommend__wrapper {
   .container();
+  display: flex;
+  flex-wrap: wrap;
   height: 1428px;
   border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.recommend__descr {
+  width: 295px;
+  height: 170px;
+  margin: 0 auto;
+  background-color: @clearwhite;
+}
+
+.recommend__descr-title {
+  display: inline-block;
+  width: 100%;
+  margin-top: 55px;
+  margin-bottom: 15px;
+  padding-left: 85px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21.34px;
+  line-height: 21.34px;
+  color: @black;
+  background-color: @clearwhite;
+  box-sizing: border-box;
+}
+
+.recommend__descr-text {
+  display: inline-block;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12.8px;
+  line-height: 12.8px;
+  color: @black;
+  background-color: @clearwhite;
+  text-align: center;
+}
+
+.recommend__item {
+  width: 295px;
+  height: 205px;
+  margin: 0 auto;
+  background-color: @clearwhite;
+}
+
+.recommend__item--dark {
+  background-color: @darkgrey;
+}
+
+.recommend__item-brand {
+  display: inline-block;
+  width: 100%;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12.8px;
+  line-height: 12.8px;
+  text-transform: uppercase;
+}
+
+.recommend__item-brand--dark {
+  padding-left: 120px;
+  color: @clearwhite;
+  background-color: @darkgrey;
+  box-sizing: border-box;
+}
+
+.recommend__item-brand--light {
+  padding-left: 30px;
+  color: @darkgrey;
+  background-color: @clearwhite;
+  box-sizing: border-box;
+}
+
+.recommend__item-title {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.07px;
+  line-height: 17.07px;
+  text-transform: uppercase;
+}
+
+.recommend__item-title--dark {
+  padding-left: 120px;
+  color: @clearwhite;
+  background-color: @darkgrey;
+  box-sizing: border-box;
+}
+
+.recommend__item-title--light {
+  padding-left: 30px;
+  color: @darkgrey;
+  background-color: @clearwhite;
+  box-sizing: border-box;
+}
+
+.recommend__item-text {
+  display: inline-block;
+  // width: 100%;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.67px;
+  line-height: 10.67px;
+}
+
+.recommend__item-text--dark {
+  padding-left: 120px;
+  padding-right: 30px;
+  color: @grey;
+  background-color: @darkgrey;
+}
+
+.recommend__item-text--light {
+  padding-left: 30px;
+  padding-right: 120px;
+  color: @grey;
+  background-color: @clearwhite;
   box-sizing: border-box;
 }
 

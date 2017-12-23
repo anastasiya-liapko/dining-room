@@ -1,13 +1,49 @@
 .brands {
-  // height: 245px;
-  background-color: yellow;
+  height: 245px;
+  background-color: @lightgrey;
   // box-sizing: border-box;
 }
 
 .brands__wrapper {
   .container();
-  height: 245px;
-  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 230px;
+  padding-top: 12px;
+  padding-left: 12px;
+  // border: 1px solid black;
+  background-color: @lightgrey;
+  box-sizing: border-box;
+}
+
+.brands__item {
+  position: relative;
+  width: 147px;
+  height: 71px;
+  // border: 1px solid black;
+  background-color: @clearwhite;
+}
+
+.brands__item--line::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  width: 1px;
+  height: 50px;
+  background-color: @lightgrey;
+}
+
+.brands__item--text {
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 50px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12.8px;
+  line-height: 28.56px;
+  color: @darkgrey;
+  background-color: @clearwhite;
   box-sizing: border-box;
 }
 

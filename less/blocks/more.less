@@ -1,0 +1,16 @@
+.more {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: @darkgrey;
+  border-radius: 50%;
+}
+
+.more::before {
+  content: "+";
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  color: @lightgrey;
+}

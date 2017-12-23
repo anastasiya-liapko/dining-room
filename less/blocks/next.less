@@ -1,10 +1,12 @@
 .next {
   display: block;
   position: relative;
-  bottom: 15px;
-  left: 285px;
+  // bottom: 15px;
+  // left: 285px;
   width: 10px;
   height: 10px;
+  background-color: @lightgrey;
+  border: none;
 }
 
 .next::before {
@@ -31,5 +33,26 @@
 
 .next--white {
   background-color: @darkgrey;
-  border: none;
 }
+
+.next--white::before {
+  background-color: @clearwhite;
+}
+
+.next--white::after {
+  background-color: @clearwhite;
+}
+
+.next--orange::before {
+  background-color: @white;
+}
+
+.next--orange::after {
+  background-color: @white;
+}
+
+.next--orange {
+  background-color: @orange;
+}
+
+
