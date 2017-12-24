@@ -2,11 +2,22 @@
   display: inline-block;
   padding: 3px 15px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 12.8px;
   line-height: 17.07px;
   color: @clearwhite;
   background-color: @orange;
   border-radius: 50px;
   text-decoration: none;
+}
+
+@media @desktop-widths {
+  .btn_grey {
+    padding: 0 25px;
+    font-size: 10px;
+    line-height: 25px;
+    color: @darkgrey;
+    background-color: @lightgrey;
+    border: 2px solid @darkgrey;
+  }
 }
