@@ -4,21 +4,36 @@
   padding-left: 20px;
   color: @white;
   background-color: @lightblack;
-  box-sizing: border-box;
+}
+
+.info__wrapper {
+  .container();
 }
 
 .info__logo {
+  position: relative;
   width: 120px;
   height: 20px;
   margin-left: 50px;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 11,25px;
+  font-size: 21.34px;
+  line-height: 15.39px;
   color: @clearwhite;
   background-color: @lightblack;
-  // border: 1px solid @white;
   box-sizing: border-box;
+}
+
+.info__logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 39px;
+  height: 38px;
+  background-image: url("../img/fork-and-knife-footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .info__logo-text {
@@ -46,10 +61,25 @@
 @media @desktop-widths {
   .info {
     height: 75px;
+    padding-top: 30px;
+  }
+
+  .info__wrapper {
+    padding-left: 120px;
   }
 
   .info__logo {
     margin-left: 10px;
+    font-size: 15px;
+    line-height: 11.25px;
+  }
+
+  .info__logo::before {
+    top: 0;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/logo-footer.png");
   }
 
   .info__logo-text {

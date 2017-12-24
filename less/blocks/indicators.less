@@ -6,11 +6,28 @@
 }
 
 .indicators__logo {
-  width: 115px;
+  position: relative;
   height: 20px;
-  padding-top: 210px;
-  border: 1px solid black;
+  margin-top: 190px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21.34px;
+  line-height: auto;
+  color: @black;
+  background-color: @lightgrey;
   box-sizing: border-box;
+}
+
+.indicators__logo::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: 0;
+  width: 106px;
+  height: 106px;
+  background-image: url("../img/fork-and-knife-big.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .indicators__logo-text {
@@ -52,13 +69,13 @@
 
 .indicators__text {
   padding: 0;
-  list-style: none;
   font-style: normal;
   font-weight: 400;
   font-size: 12.8px;
   line-height: auto;
-  color: @black;
+  color: @lightblack;
   background-color: @lightgrey;
+  list-style: none;
 }
 
 @media @desktop-widths {
@@ -68,7 +85,6 @@
     margin-top: -35px;
     margin-left: 40px;
     box-sizing: border-box;
-    border: 1px solid black;
   }
 
   .indicators__item {
@@ -84,5 +100,9 @@
   .indicators__text {
     font-size: 11.25px;
     line-height: auto;
+  }
+
+  .indicators__logo::before {
+    background-image: url("../img/fork-and-knife-big-desktop.png");
   }
 }

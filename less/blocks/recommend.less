@@ -1,7 +1,5 @@
 .recommend {
-  // height: 1428px;
   background-color: @lightgrey;
-  // box-sizing: border-box;
 }
 
 .recommend__wrapper {
@@ -9,16 +7,11 @@
   display: flex;
   flex-wrap: wrap;
   height: 1428px;
-  border: 1px solid black;
   box-sizing: border-box;
 }
 
-// .recommend__item-wrapper {
-//   .container();
-//   padding: 0 12px;
-// }
-
 .recommend__descr {
+  position: relative;
   width: 295px;
   height: 170px;
   margin: 0 auto;
@@ -54,6 +47,7 @@
 }
 
 .recommend__item {
+  position: relative;
   width: 295px;
   height: 205px;
   margin: 0 auto;
@@ -78,18 +72,88 @@
     font-weight: 400;
     font-size: 17.07px;
     line-height: 17.07px;
-    // text-transform: uppercase;
   }
 
   .recommend__item-text {
     display: inline-block;
-    // width: 100%;
     margin-top: 20px;
     font-style: normal;
     font-weight: 300;
     font-size: 10.67px;
     line-height: 10.67px;
   }
+}
+
+.recommend__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 93px;
+  height: 188px;
+  background-image: url("../img/equipment-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recommend__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 210px;
+  width: 73px;
+  height: 175px;
+  background-image: url("../img/equipment-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recommend__item:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 190px;
+  width: 107px;
+  height: 205px;
+  background-image: url("../img/equipment-5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recommend__item:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 210px;
+  width: 73px;
+  height: 175px;
+  background-image: url("../img/equipment-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recommend__item:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 93px;
+  height: 188px;
+  background-image: url("../img/equipment-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recommend__item:nth-child(7)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 190px;
+  width: 107px;
+  height: 205px;
+  background-image: url("../img/equipment-5.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .recommend__item_dark {
@@ -144,26 +208,67 @@
 @media @desktop-widths {
   .recommend {
     height: 967px;
-    // background-color: orange;
   }
 
   .recommend__wrapper {
-    // justify-content: space-between;
-    // align-items: flex-start;
     width: 870px;
     height: 775px;
   }
 
-  .recommend__item {
-    // display: inline-block;
-    // float: left;
+  .recommend__item:nth-child(2)::before {
+    top: 10px;
+    left: -180px;
+    width: 492px;
+    height: 303px;
+    background-image: url("../img/equipment-1-desktop.png");
+  }
+
+  .recommend__item:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    width: 64px;
+    height: 149px;
+    background-image: url("../img/equipment-2-desktop.png");
+  }
+
+  .recommend__item:nth-child(4)::before {
+    top: 20px;
+    left: 55px;
+    width: 61px;
+    height: 159px;
+    background-image: url("../img/euipment-3-desktop.png");
+  }
+
+  .recommend__item:nth-child(5)::before {
+    top: 140px;
+    left: 60px;
+    width: 264px;
+    height: 350px;
+    background-image: url("../img/equipment-4-desktop.png");
+  }
+
+  .recommend__item:nth-child(6)::before {
+    top: 0;
+    left: 0;
+    width: 115px;
+    height: 258px;
+    background-image: url("../img/quipment-5-desktop.png");
+  }
+
+  .recommend__item:nth-child(7)::before {
+    top: 0;
+    left: 300px;
+    width: 183px;
+    height: 199px;
+    background-image: url("../img/equipment-6-desktop.png");
   }
 
   .recommend__descr {
     width: 100%;
     height: 195px;
     background-color: @lightgrey;
-    border: 1px solid black;
   }
 
   .recommend__descr-title {
