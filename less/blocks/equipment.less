@@ -1,9 +1,14 @@
+.equipment {
+  background-color: @clearwhite;
+}
+
 .equipment__wrapper {
-  .container();
-  height: 35px;
+  width: auto;
+  // .container();
+  min-height: 35px;
   padding-top: 5px;
   padding-left: 12px;
-  background-color: @lightgrey;
+  background-color: @white;
   box-sizing: border-box;
 }
 
@@ -15,7 +20,7 @@
   font-size: 12.8px;
   line-height: 6.83px;
   color: @black;
-  background-color: @lightgrey;
+  background-color: @white;
 }
 
 .equipment__title::before {
@@ -23,7 +28,7 @@
   position: absolute;
   left: 285px;
   color: @grey;
-  background-color: @lightgrey;
+  background-color: @white;
 }
 
 .equipment__item {
@@ -34,7 +39,10 @@
   .equipment__wrapper {
     display: flex;
     justify-content: space-between;
-    height: 65px;
+    width: 81%;
+    max-width: 1920px;
+    min-height: 65px;
+    margin: 0 auto;
     padding-left: 0;
     background-color: @clearwhite;
   }
