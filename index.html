@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Столовая.РУ</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="path/to/swiper.min.css"> -->
   </head>
   <body>
     <header class="header">
@@ -83,46 +85,54 @@
             <a class="categories__item" href="#">Все предложения</a>
           </div>
           <div class="ad__portfolio portfolio">
-            <div class="portfolio__wrapper slider">
-              <div class="portfolio__list-wrapper slider__wrapper">
-                <div class="portfolio__list slider__inner">
+            <div class="portfolio__wrapper slider swiper-container">
+              <div class="portfolio__list-wrapper slider__wrapper swiper-wrapper">
+
+                <div class="portfolio__list slider__inner swiper-slide">
                   <div class="portfolio__item slider__item">
                     <span class="portfolio__text">Портфолио</span>
                     <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
                     <span class="portfolio__descr">Оборудование для пищеблоков</span>
                     <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
                   </div>
-
-                  <!-- <div class="portfolio__item slider__item">
-                    <span class="portfolio__text">Портфолио</span>
-                    <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
-                    <span class="portfolio__descr">Оборудование для пищеблоков</span>
-                    <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
-                  </div>
-
-                  <div class="portfolio__item slider__item">
-                    <span class="portfolio__text">Портфолио</span>
-                    <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
-                    <span class="portfolio__descr">Оборудование для пищеблоков</span>
-                    <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
-                  </div>
-
-                  <div class="portfolio__item slider__item">
-                    <span class="portfolio__text">Портфолио</span>
-                    <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
-                    <span class="portfolio__descr">Оборудование для пищеблоков</span>
-                    <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
-                  </div> -->
                 </div>
+
+                <div class="portfolio__list slider__inner swiper-slide">
+                  <div class="portfolio__item slider__item">
+                    <span class="portfolio__text">Портфолио</span>
+                    <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
+                    <span class="portfolio__descr">Оборудование для пищеблоков</span>
+                    <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="portfolio__list slider__inner swiper-slide">
+                  <div class="portfolio__item slider__item">
+                    <span class="portfolio__text">Портфолио</span>
+                    <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
+                    <span class="portfolio__descr">Оборудование для пищеблоков</span>
+                    <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="portfolio__list slider__inner swiper-slide">
+                  <div class="portfolio__item slider__item">
+                    <span class="portfolio__text">Портфолио</span>
+                    <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
+                    <span class="portfolio__descr">Оборудование для пищеблоков</span>
+                    <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
+                  </div>
+                </div>
+
               </div>
-              <div class="portfolio__pagination slider__pagination">
+              <div class="portfolio__pagination slider__pagination swiper-pagination">
                 <span class="slider__pagination-item"></span>
                 <span class="slider__pagination-item slider__pagination-item_active"></span>
                 <span class="slider__pagination-item"></span>
                 <span class="slider__pagination-item"></span>
               </div>
-              <button class="portfolio__prev prev" type="button"></button>
-              <button class="portfolio__next next" type="button"></button>
+              <button class="portfolio__prev prev swiper-button-prev" type="button"></button>
+              <button class="portfolio__next next swiper-button-next" type="button"></button>
             </div>
           </div>
           <div class="ad__sale sale">
@@ -494,5 +504,22 @@
         </div>
       </div>
     </footer>
+    <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+      direction: 'vertical',
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <!-- <script src="path/to/swiper.min.js"></script> -->
   </body>
 </html>
