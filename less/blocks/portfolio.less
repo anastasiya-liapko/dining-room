@@ -7,9 +7,12 @@
 .portfolio__item {
   position: relative;
   width: 160px;
-  height: 145px;
+  height: 150px;
+  margin: 0 auto;
   padding-top: 28px;
   padding-left: 12px;
+  padding-right: 140px;
+  border: 1px solid white;
 }
 
 .portfolio__item::before {
@@ -59,65 +62,75 @@
 
 .portfolio__prev {
   top: 15px;
-  left: 12px;
+  left: 50%;
+  margin-left: -145px;
 }
 
 .portfolio__next {
   top: 5px;
-  left: 295px;
+  left: 50%;
+  margin-left: 135px;
 }
 
 .portfolio__pagination {
   position: relative;
   top: 28px;
-  left: 132px;
+  left: 50%;
+  width: 60px;
+  margin-left: -30px;
 }
 
 @media @desktop-widths {
   .portfolio {
-    width: 565px;
-    height: 300px;
+    flex-grow: 1;
+    min-width: 903px;
+    height: 480px;
+    margin: 0 15px;
+    margin-top: 20px;
   }
 
   .portfolio__item {
-    width: 313px;
-    padding-top: 35px;
-    padding-left: 45px;
+    width: 900px;
+    height: 480px;
+    padding-top: 70px;
+    padding-left: 72px;
+    padding-right: 400px;
     box-sizing: border-box;
   }
 
   .portfolio__item::before {
     top: 50px;
-    left: 300px;
+    left: 500px;
     width: 260px;
     height: 223px;
     background-image: url("../img/slider-1.png");
   }
 
   .portfolio__text {
-    font-size: 10px;
-    line-height: 12.5px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .portfolio__title {
-    margin-top: 20px;
-    font-size: 25px;
-    line-height: 26px;
+    margin-top: 60px;
+    font-size: 40px;
+    line-height: 42px;
   }
 
   .portfolio__descr {
-    font-size: 11px;
-    line-height: 12px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .portfolio__btn {
     display: block;
-    width: 50px;
-    margin-top: 25px;
+    width: 130px;
+    margin-top: 45px;
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 11.25px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
   }
 
   .portfolio__prev,
@@ -126,7 +139,7 @@
   }
 
   .portfolio__pagination {
-    top: 122px;
-    left: 257px;
+    top: -50px;
+    left: 50%;
   }
 }

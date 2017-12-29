@@ -4,20 +4,23 @@
 }
 
 .ad__wrapper {
-  // width: auto;
-  .container();
-  min-height: 452px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  min-height: 240px;
   box-sizing: border-box;
 }
 
 @media @desktop-widths {
   .ad__wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
     width: 81%;
     max-width: 1920px;
-    min-height: 310px;
+    min-height: 500px;
     margin: 0 auto;
   }
 }
