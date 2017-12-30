@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Столовая.РУ</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
-    <!-- <link rel="stylesheet" href="path/to/swiper.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+    <link rel="stylesheet" href="path/to/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/swiper.css">
   </head>
   <body>
     <header class="header">
@@ -84,7 +86,7 @@
             <a class="categories__item" href="#">Для войсковых частей</a>
             <a class="categories__item" href="#">Все предложения</a>
           </div>
-          <div class="ad__portfolio portfolio">
+          <!-- <div class="ad__portfolio portfolio">
             <div class="portfolio__wrapper slider swiper-container">
               <div class="portfolio__list-wrapper slider__wrapper swiper-wrapper">
 
@@ -134,7 +136,19 @@
               <button class="portfolio__prev prev swiper-button-prev" type="button"></button>
               <button class="portfolio__next next swiper-button-next" type="button"></button>
             </div>
-          </div>
+          </div> -->
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
           <div class="ad__sale sale">
             <div class=" sale__wrapper">
               <div class="sale__text-wrapper">
@@ -504,22 +518,35 @@
         </div>
       </div>
     </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.esm.bundle.js"></script>
+    <script src="path/to/swiper.min.js"></script> -->
+
+    <!-- <script src="js/swiper.esm.bunble.js"></script> -->
+    <!-- <script src="js/swiper.esm.js"></script> -->
+    <script src="js/swiper.js"></script>
+    <!-- <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.min.js.map"></script> -->
     <script>
-    var mySwiper = new Swiper ('.swiper-container', {
-      direction: 'vertical',
-      loop: true,
+      var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
 
-      pagination: {
-        el: '.swiper-pagination',
-      },
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    })
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-    <!-- <script src="path/to/swiper.min.js"></script> -->
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+      })
+      </script>
   </body>
 </html>
