@@ -26,9 +26,39 @@
                 <a class="user__menu-item" href="#">Сервис</a>
                 <a class="user__menu-item" href="#">Контакты</a>
               </div>
-              <div class="user__mail">info@stolovay.ru</div>
+              <div class="user__mail">
+                <a class="user__mail-text" href="#">info@stolovay.ru</a>
+                <div class="user__mail-popup hidden">Скопировать</div>
+              </div>
               <div class="user__phone">
                 <span class="user__phone-text">8 495 790-72-05</span>
+                <div class="user__phone-popup">
+                  <div class="user__phone-wrapper">
+                    <div class="user__phone-close">
+                      <button type="button"></button>
+                    </div>
+                    <div class="user__phone-contacts">
+                      <span class="user__phone-number">8 495 790-72-05</span>
+                      <span class="user__phone-descr">Мы принимаем звонки без выходных</span>
+                      <span class="user__phone-title">Выберите способ связи:</span>
+                      <a class="user__phone-mob" href="#">Мобильный</a>
+                      <a class="user__phone-viber" href="#">Viber</a>
+                      <a class="user__phone-telegram" href="#">Telegram</a>
+                      <a class="user__phone-whatsapp" href="#">Whatsapp</a>
+                    </div>
+                    <div class="user__phone-call call">
+                      <form class="call__form" action="#" method="post">
+                        <span class="call__title">Обратный звонок:</span>
+                        <span class="call__descr">Мы перезвоним вам в течении часа</span>
+                        <label class="call__name-text" for="name">Имя:</label>
+                        <input class="call__name" id="name" type="text" name="name" placeholder="Анна">
+                        <label class="call__number-text" for="number">Телефон:</label>
+                        <input class="call__number" id="number" type="number" name="number">
+                        <button class="call__btn btn btn_orange" type="submit">Отправить</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -131,17 +161,7 @@
               <button class="portfolio__next next swiper-button-next" type="button"></button>
             </div>
           </div>
-          <!-- <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-            </div>
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div> -->
+          
           <div class="ad__sale sale">
             <div class=" sale__wrapper">
               <div class="sale__text-wrapper">
@@ -184,35 +204,19 @@
             </a>
           </div>
           <div class="offers__service service">
-            <div class="service__wrapper slider swiper-container">
-                <div class="service__list-wrapper slider__wrapper swiper-wrapper">
-                  <div class="service__list slider__inner swiper-slide">
-                    <div class="service__item slider__item">
-                      <span class="service__title">Сервис</span>
-                      <span class="service__descr">Гарантийный ремонт, монтаж и т.д.</span>
-                      <a class="service__btn btn" href="#">Подробнее ></a>
-                    </div>
-                  </div>
-
-                  <div class="service__list slider__inner swiper-slide">
-                    <div class="service__item slider__item">
-                      <span class="service__title">Сервис</span>
-                      <span class="service__descr">Гарантийный ремонт, монтаж и т.д.</span>
-                      <a class="service__btn btn" href="#">Подробнее ></a>
-                    </div>
-                  </div>
-
-                  <div class="service__list slider__inner swiper-slide">
-                    <div class="service__item slider__item">
-                      <span class="service__title">Сервис</span>
-                      <span class="service__descr">Гарантийный ремонт, монтаж и т.д.</span>
-                      <a class="service__btn btn" href="#">Подробнее ></a>
-                    </div>
+            <div class="service__wrapper slider">
+              <div class="service__list-wrapper slider__wrapper">
+                <div class="service__list slider__inner">
+                  <div class="service__item slider__item">
+                    <span class="service__title">Сервис</span>
+                    <span class="service__descr">Гарантийный ремонт, монтаж и т.д.</span>
+                    <a class="service__btn btn" href="#">Подробнее ></a>
                   </div>
                 </div>
-                <div class="service__controls slider__controls swiper-pagination"></div>
-                <button class="service__prev prev swiper-button-prev" type="button"></button>
-                <button class="service__next next swiper-button-next" type="button"></button>
+              </div>
+              <div class="service__controls slider__controls"></div>
+              <button class="service__prev prev" type="button"></button>
+              <button class="service__next next" type="button"></button>
             </div>
           </div>
         </div>
@@ -261,7 +265,9 @@
               </span>
             </div>
           </div>
-          <a class="news__btn btn btn_grey" href="#">Все новости</a>
+          <div class="news__btn-wrapper">
+            <a class="news__btn btn btn_grey" href="#">Все новости</a>
+          </div>
         </div>
       </section>
       <section class="recommend">
@@ -516,30 +522,37 @@
       </div>
       <div class="footer__info info">
         <div class="info__wrapper">
-          <div class="info__logo">Столовая.РУ</div>
-          <span class="info__logo-text">Cоздание оптимальных пищеблоков</span>
+          <div class="info__logo">Столовая.РУ
+          <span class="info__logo-text">Cоздание оптимальных пищеблоков</span></div>
           <span class="info__developer">Сайт разработан NTI-systems</span>
         </div>
       </div>
     </footer>
-
+    <div class="modal-overlay"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
-    <script>
-      var mySwiper = new Swiper ('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-      })
-      </script>
-
+    <script src="js/swiper.js"></script>
+    <script src="js/open-mail.js"></script>
+    <!-- <script>
+      var ESC_KEYCODE = 27;
+      var userPhone = document.querySelector('.user__phone');
+      var userPhonePopup = userPhone.querySelector('.user__phone-popup');
+      var userPhoneClose = userPhone.querySelector('.user__phone-close');
+      var onPopupEscPress = function (evt) {
+        if (evt.keyCode === ESC_KEYCODE) {
+          closePopup();
+        }
+      };
+      var closePopup = function () {
+        userPhonePopup.classList.add('hidden');
+        document.removeEventListener('keydown', onPopupEscPress);
+      };
+      userPhone.addEventListener('click', function () {
+        userPhonePopup.classList.remove('hidden');
+        document.addEventListener('keydown', onPopupEscPress);
+      });
+      userPhoneClose.addEventListener('click', function () {
+        userPhonePopup.classList.add('hidden');
+      });
+    </script> -->
   </body>
 </html>

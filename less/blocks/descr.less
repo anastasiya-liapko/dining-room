@@ -3,8 +3,9 @@
 }
 
 .descr__wrapper {
-  .container();
-  height: 820px;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 820px;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -12,11 +13,14 @@
 
 @media @desktop-widths {
   .descr {
-    height: 520px;
+    min-height: 520px;
   }
 
   .descr__wrapper {
-    width: 865px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 81%;
     padding-top: 120px;
   }
 }

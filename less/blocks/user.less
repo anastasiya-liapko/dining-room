@@ -24,7 +24,8 @@
 .user__phone-text,
 .user__social,
 .user__basket-text,
-.user__basket-price {
+.user__basket-price,
+.user__phone-popup {
   display: none;
 }
 
@@ -212,7 +213,7 @@
   .user__menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-grow: 1;
     width: 62%;
@@ -241,23 +242,35 @@
     position: relative;
     align-self: center;
     display: block;
-    width: 140px;
+    width: 160px;
     height: auto;
     margin-left: 50px;
-    padding-left: 27px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: auto;
+    margin-right: 20px;
     color: @clearwhite;
     background-color: @green;
+
+    a {
+      position: relative;
+      display: block;
+      padding-left: 35px;
+      padding-right: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: auto;
+      color: @clearwhite;
+      background-color: @green;
+      text-decoration: none;
+    }
   }
 
-  .user__mail::before {
+  .user__mail a::before {
     content: "";
     position: absolute;
-    top: 1px;
-    left: 0;
+    top: 15px;
+    left: 8px;
     width: 20px;
     height: 15px;
     background-image: url("../img/mail-1920.png");
@@ -265,8 +278,23 @@
     background-repeat: no-repeat;
   }
 
-  .user__phone-text {
-    display: block;
+  .user__mail a:hover {
+    background-color: @transparentwhite;
+  }
+
+  .user__mail-popup {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    width: 160px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: @darkgrey;
+    border-radius: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
   }
 
   .user__phone {
@@ -281,18 +309,200 @@
     line-height: auto;
     color: @clearwhite;
     background-color: @green;
+    cursor: pointer;
   }
 
-  .user__phone::before {
+  .user__phone-text {
+    position: relative;
+    display: block;
+    width: 160px;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .user__phone-text:hover {
+    background-color: @transparentwhite;
+  }
+
+  .user__phone-text::before {
     content: "";
     position: absolute;
-    top: 1px;
-    left: 0;
+    top: 12px;
+    left: 8px;
     width: 20px;
-    height: 15px;
+    height: 20px;
     background-image: url("../img/phone-1920.png");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .user__phone:hover .user__phone-popup {
+    display: block;
+  }
+
+  .user__phone-popup {
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    z-index: 10;
+    display: none;
+    width: 755px;
+    height: 345px;
+    padding: 15px 15px;
+    color: @darkgrey;
+    background-color: @clearwhite;
+    box-sizing: border-box;
+  }
+
+  .user__phone-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .user__phone-close {
+    width: 100%;
+    height: 25px;
+    margin-left: auto;
+    margin-bottom: 25px;
+    background-color: @clearwhite;
+  }
+
+  .user__phone-close button {
+    position: relative;
+    left: 97%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .user__phone-close button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 1px;
+    height: 25px;
+    background-color: @darkgrey;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+  }
+
+  .user__phone-close button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 1px;
+    height: 25px;
+    background-color: @darkgrey;
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+
+  .user__phone-contacts {
+    width: 280px;
+    height: 230px;
+    margin-left: 35px;
+    box-sizing: border-box;
+
+    a {
+      position: relative;
+      display: block;
+      margin: 5px 0;
+      padding: 5px 30px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      color: @black;
+      background-color: @clearwhite;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+  }
+
+  .user__phone-number {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    color: @green;
+    background-color: @clearwhite;
+  }
+
+  .user__phone-descr {
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: @grey;
+    background-color: @clearwhite;
+  }
+
+  .user__phone-title {
+    display: block;
+    margin: 21px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: @black;
+    background-color: @clearwhite;
+  }
+
+  .user__phone-mob::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone-popup.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .user__phone-viber::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/vider-popup.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .user__phone-telegram::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/telegram-popup.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .user__phone-whatsapp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/whatsapp-popup.png");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .user__logo {
@@ -432,7 +642,8 @@
   .user__basket {
     align-self: center;
     position: relative;
-    width: 167px;
+    width: 140px;
+    margin-left: 30px;
     height: 35px;
     margin-top: 10px;
     padding-left: 45px;

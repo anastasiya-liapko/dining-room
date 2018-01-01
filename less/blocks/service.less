@@ -1,5 +1,8 @@
 .service {
-  height: 555px;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 15px;
+  min-height: 240px;
   background-color: @orange;
   box-sizing: border-box;
 }
@@ -88,36 +91,38 @@
 
 @media @desktop-widths {
   .service {
-    width: 285px;
-    height: 270px;
+    width: 460px;
+    height: 430px;
+    margin: 0;
+    margin-left: 20px;
   }
 
   .service__item::before {
     top: 0;
     left: 0;
-    width: 286px;
-    height: 270px;
+    width: 455px;
+    height: 435px;
     background-image: url("../img/slider-2-desktop.png");
   }
 
   .service__title {
-    margin-top: 165px;
+    margin-top: 280px;
     padding-left: 30px;
-    font-size: 25px;
+    font-size: 40px;
     line-height: auto;
   }
 
   .service__descr {
     padding-left: 30px;
-    font-size: 10px;
-    line-height: 13.75px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .service__btn {
     margin-top: 5px;
     padding-left: 30px;
-    font-size: 10px;
-    line-height: 12.5px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   // .service__prev,

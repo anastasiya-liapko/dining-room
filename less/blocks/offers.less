@@ -4,14 +4,24 @@
 
 .offers__wrapper{
   .container();
-  height: 725px;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // width: auto;
+  // min-height: 725px;
+  // margin: 0 auto;
   box-sizing: border-box;
 }
 
 @media @desktop-widths {
   .offers__wrapper{
+    width: 81%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    height: 270px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 270px;
   }
 }

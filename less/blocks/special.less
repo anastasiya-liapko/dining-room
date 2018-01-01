@@ -1,12 +1,15 @@
 .special {
-  height: 488px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
 .special__title {
   display: block;
   width: 295px;
-  height: 40px;
+  min-height: 40px;
   margin: 0 auto;
   padding-top: 10px;
   padding-left: 12px;
@@ -113,53 +116,59 @@
 @media @desktop-widths {
   .special {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 670px;
-    height: 270px;
+    justify-content: space-between;
+    width: 1070px;
+    min-height: 270px;
   }
 
   .special__title {
-    width: 667px;
-    height: 40px;
-    font-size: 15px;
-    line-height: auto;
+    width: 1070px;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
   }
 
   .special__item {
-    width: 221px;
-    height: 230px;
-    padding-left: 55px;
+    width: 350px;
+    height: 370px;
+    padding-left: 120px;
+    padding-top: 100px;
   }
 
   .special__item::before {
-    top: 127px;
-    left: 90px;
+    top: 250px;
+    left: 150px;
     width: 148px;
     height: 130px;
     background-image: url("../img/brand-small-desktop.png");
   }
 
   .special__item::after {
-    top: 30px;
-    left: 70px;
-    width: 80px;
-    height: 99px;
-    background-image: url("../img/offer-desktop.png");
+    top: 70px;
+    left: 100px;
+    width: 150px;
+    height: 180px;
+    background-image: url("../img/offers-1.png");
   }
 
   .special__item-name {
-    width: 120px;
+    width: 180px;
+    margin-left: -20px;
     padding-top: 160px;
     padding-bottom: 0;
-    font-size: 10px;
+    font-size: 16px;
     line-height: auto;
-    text-align: center;
+    text-align: left;
   }
 
   .special__item-price {
     width: 120px;
-    margin-top: -5px;
-    font-size: 10px;
+    margin-top: 0;
+    font-size: 16px;
     line-height: auto;
     text-align: center;
   }

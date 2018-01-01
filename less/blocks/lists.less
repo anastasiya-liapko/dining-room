@@ -1,7 +1,7 @@
 .lists {
   display: flex;
   flex-wrap: wrap;
-  height: 240px;
+  min-height: 240px;
   padding: 20px;
   background-color: @darkgrey;
   box-sizing: border-box;
@@ -40,7 +40,7 @@
 
 @media @desktop-widths {
   .lists {
-    height: 300px;
+    min-height: 480px;
     justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
@@ -73,8 +73,8 @@
   .lists__title {
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 24px;
+    line-height: 24px;
     color: @grey;
     background-color: @darkgrey;
   }
@@ -82,18 +82,19 @@
   .lists__link {
     font-style: normal;
     font-weight: 300;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 16px;
+    line-height: 24px;
     color: @clearwhite;
     background-color: @darkgrey;
     text-decoration: none;
   }
 
   .lists__item-contacts li {
+    width: 200px;
     font-style: normal;
     font-weight: 300;
-    font-size: 10px;
-    line-height: auto;
+    font-size: 16px;
+    line-height: 16px;
     color: @clearwhite;
     background-color: @darkgrey;
   }
