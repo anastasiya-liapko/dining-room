@@ -2,14 +2,36 @@
   width: 320px;
   margin: 0 auto;
   margin-top: 15px;
-  min-height: 240px;
+  min-height: 210px;
   background-color: @orange;
   box-sizing: border-box;
+}
+
+.service__wrapper {
+  min-height: 210px;
 }
 
 .service__item {
   position: relative;
   background-color: transparent;
+}
+
+.service__item:nth-child(2) {
+  span {
+    color: red;
+  }
+}
+
+.service__item:nth-child(3) {
+  span {
+    color: blue;
+  }
+}
+
+.service__item:nth-child(4) {
+  span {
+    color: yellow;
+  }
 }
 
 .service__item::before {
@@ -18,7 +40,7 @@
   top: 0;
   left: 0;
   width: 320px;
-  height: 238px;
+  height: 220px;
   background-image: url("../img/slider-2.png");
   background-repeat: no-repeat;
   background-position: left;
@@ -72,22 +94,23 @@
   box-sizing: border-box;
 }
 
-// .service__pagination {
-//   position: relative;
-//   top: 14px;
-//   left: 133px;
-// }
+.service__pagination {
+  position: relative;
+  top: 14px;
+  left: 133px;
+}
 
-// .service__prev {
-//   position: relative;
-//   left: 10px;
-// }
+.service__prev {
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
 
-// .service__next {
-//   position: relative;
-//   top: -10px;
-//   left: 295px;
-// }
+.service__next {
+  position: relative;
+  top: -15px;
+  left: 295px;
+}
 
 @media @desktop-widths {
   .service {
@@ -101,7 +124,7 @@
     top: 0;
     left: 0;
     width: 455px;
-    height: 435px;
+    // height: 435px;
     background-image: url("../img/slider-2-desktop.png");
   }
 
@@ -133,5 +156,9 @@
   .service__pagination {
     top: 10px;
     left: 115px;
+  }
+
+  .service__next {
+    left: 430px;
   }
 }

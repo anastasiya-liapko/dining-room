@@ -35,3 +35,41 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
+.first-translate {
+  transition-duration: 0ms;
+  transform: translate(0);
+}
+
+.second-translate {
+  transition-duration: 0ms;
+  transform: translate(-320px);
+}
+
+.third-translate {
+  transition-duration: 0ms;
+  transform: translate(-640px);
+}
+
+.forth-translate {
+  transition-duration: 0ms;
+  transform: translate(-960px);
+}
+
+@media @desktop-widths {
+  .first-translate {
+    transform: translate(0);
+  }
+  
+  .second-translate {
+    transform: translate(-460px);
+  }
+  
+  .third-translate {
+    transform: translate(-920px);
+  }
+  
+  .forth-translate {
+    transform: translate(-1380px);
+  }
+}

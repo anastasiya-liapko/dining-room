@@ -115,10 +115,19 @@
             <a class="categories__item" href="#">Все предложения</a>
           </div>
           <div class="ad__portfolio portfolio">
-            <div class="portfolio__wrapper slider swiper-container">
-              <div class="portfolio__list-wrapper slider__inner swiper-wrapper">
+            <div class="portfolio__wrapper swiper-container">
+              <div class="portfolio__list-wrapper swiper-wrapper">
 
-                <div class="portfolio__list slider__slides swiper-slide">
+                <div class="portfolio__list swiper-slide">
+                  <div class="portfolio__item">
+                    <span class="portfolio__text">Портфолио</span>
+                    <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
+                    <span class="portfolio__descr">Оборудование для пищеблоков</span>
+                    <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="portfolio__list swiper-slide">
                   <div class="portfolio__item slider__item">
                     <span class="portfolio__text">Портфолио</span>
                     <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
@@ -127,7 +136,7 @@
                   </div>
                 </div>
 
-                <div class="portfolio__list slider__slides swiper-slide">
+                <div class="portfolio__list swiper-slide">
                   <div class="portfolio__item slider__item">
                     <span class="portfolio__text">Портфолио</span>
                     <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
@@ -136,16 +145,7 @@
                   </div>
                 </div>
 
-                <div class="portfolio__list slider__slides swiper-slide">
-                  <div class="portfolio__item slider__item">
-                    <span class="portfolio__text">Портфолио</span>
-                    <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
-                    <span class="portfolio__descr">Оборудование для пищеблоков</span>
-                    <a class="portfolio__btn btn btn_orange" href="#">Подробнее</a>
-                  </div>
-                </div>
-
-                <div class="portfolio__list slider__slides swiper-slide">
+                <div class="portfolio__list swiper-slide">
                   <div class="portfolio__item slider__item">
                     <span class="portfolio__text">Портфолио</span>
                     <span class="portfolio__title">НИИ скорой помощи им. Н.В. Склифосовского</span>
@@ -155,7 +155,7 @@
                 </div>
 
               </div>
-              <div class="portfolio__controls slider__controls swiper-pagination">
+              <div class="portfolio__controls swiper-pagination">
               </div>
               <button class="portfolio__prev prev swiper-button-prev" type="button"></button>
               <button class="portfolio__next next swiper-button-next" type="button"></button>
@@ -206,7 +206,22 @@
           <div class="offers__service service">
             <div class="service__wrapper slider">
               <div class="service__list-wrapper slider__wrapper">
-                <div class="service__list slider__inner">
+                <div class="service__list slider__inner first-translate">
+                  <div class="service__item slider__item">
+                    <span class="service__title">Сервис</span>
+                    <span class="service__descr">Гарантийный ремонт, монтаж и т.д.</span>
+                    <a class="service__btn btn" href="#">Подробнее ></a>
+                  </div>
+                  <div class="service__item slider__item">
+                    <span class="service__title">Сервис</span>
+                    <span class="service__descr">Гарантийный ремонт, монтаж и т.д.</span>
+                    <a class="service__btn btn" href="#">Подробнее ></a>
+                  </div>
+                  <div class="service__item slider__item">
+                    <span class="service__title">Сервис</span>
+                    <span class="service__descr">Гарантийный ремонт, монтаж и т.д.</span>
+                    <a class="service__btn btn" href="#">Подробнее ></a>
+                  </div>
                   <div class="service__item slider__item">
                     <span class="service__title">Сервис</span>
                     <span class="service__descr">Гарантийный ремонт, монтаж и т.д.</span>
@@ -214,9 +229,14 @@
                   </div>
                 </div>
               </div>
-              <div class="service__controls slider__controls"></div>
-              <button class="service__prev prev" type="button"></button>
-              <button class="service__next next" type="button"></button>
+              <div class="service__controls slider__controls">
+                <span class="slider__controls-first"></span>
+                <span class="slider__controls-second"></span>
+                <span class="slider__controls-third"></span>
+                <span class="slider__controls-forth"></span>
+              </div>
+              <button class="service__prev prev slider__prev" type="button"></button>
+              <button class="service__next next slider__next" type="button"></button>
             </div>
           </div>
         </div>
@@ -532,6 +552,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/open-mail.js"></script>
+    <script src="js/slider.js"></script>
     <!-- <script>
       var ESC_KEYCODE = 27;
       var userPhone = document.querySelector('.user__phone');
