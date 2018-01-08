@@ -58,17 +58,4 @@
         sliderInner.classList.add('first-translate');
       }
     })
-
-    // sliderControls.addEventListener('click', function (evt) {
-    //   var elem = evt.target;
-    //   if (elem === firstBtn) {
-    //     sliderInner.setAttribute('style', 'transform: translate(0)');
-    //   } else if (elem === secondBtn) {
-    //     sliderInner.setAttribute('style', 'transform: translate(-320px)');
-    //   } else if (elem === thirdBtn) {
-    //     sliderInner.setAttribute('style', 'transform: translate(-640px)');
-    //   } else if (elem === forthBtn) {
-    //     sliderInner.setAttribute('style', 'transform: translate(-960px)');
-    //   }
-    // })
     })();
