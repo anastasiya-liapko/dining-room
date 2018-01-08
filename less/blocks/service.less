@@ -71,15 +71,17 @@
 }
 
 .service__controls span {
+  margin-right: 5px;
   background-color: @orange;
   border: 1px solid @clearwhite;
   box-sizing: border-box;
 }
 
-.service__pagination {
+.service__controls {
   position: relative;
-  top: 14px;
-  left: 133px;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -20px;
 }
 
 .service__prev {
@@ -134,6 +136,10 @@
   // .service__next {
   //   display: none;
   // }
+
+  .service__controls {
+    bottom: -10px;
+  }
 
   .service__pagination {
     top: 10px;
