@@ -24,6 +24,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
+    width: 500px; 
     margin-bottom: 25px;
   }
 
@@ -45,8 +47,13 @@
   .news__item {
     position: relative;
     flex-grow: 1;
-    max-width: 810px;
-    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: auto;
+    min-height: 170px;
     padding-left: 212px;
     box-sizing: border-box;
   }
@@ -101,17 +108,38 @@
 
   .news__item-main {
     position: relative;
-    width: 505px;
-    height: 680px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: space-around;
+    width: 545px;
+    height: 650px;
     margin-right: auto;
     margin-bottom: 25px;
     padding-top: 330px;
     padding-left: 0;
+    padding-right: 55px;
     box-sizing: border-box;
 
+    .news__author {
+      width: 200px;
+      margin-top: 20px;
+    }
+
     .news__date {
-      position: relative;
-      left: 350px;
+      width: 200px;
+      margin-left: auto;
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .news__descr {
+      width: 490px;
+    }
+
+    .news__list {
+      width: 490px;
     }
   }
 
@@ -126,8 +154,7 @@
   }
 
   .news__date {
-    position: relative;
-    left: 500px;
+    margin-left: auto;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -139,11 +166,10 @@
 
   .news__descr {
     display: block;
-    margin-bottom: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 36px;
+    line-height: auto;
     color: @lightblack;
     background-color: @lightgrey;
     text-decoration: none;
