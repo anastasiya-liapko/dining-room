@@ -5,7 +5,8 @@
 .recommend__wrapper {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 81%;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -21,10 +22,12 @@
 
 .recommend__descr {
   position: relative;
-  width: 295px;
+  width: 100%;
+  min-width: 295px;
   height: 170px;
   margin: 0 auto;
-  background-color: @clearwhite;
+  text-align: center;
+  background-color: @lightgrey;
 }
 
 .recommend__descr-title {
@@ -32,13 +35,12 @@
   width: 100%;
   margin-top: 55px;
   margin-bottom: 15px;
-  padding-left: 85px;
   font-style: normal;
   font-weight: 400;
   font-size: 21.34px;
   line-height: 21.34px;
   color: @black;
-  background-color: @clearwhite;
+  background-color: @lightgrey;
   box-sizing: border-box;
 }
 
@@ -51,7 +53,7 @@
   font-size: 12.8px;
   line-height: 12.8px;
   color: @black;
-  background-color: @clearwhite;
+  background-color: @lightgrey;
   text-align: center;
 }
 
@@ -111,7 +113,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    left: 210px;
+    right: 10px;
     width: 73px;
     height: 175px;
     background-image: url("../img/equipment-4.png");
@@ -123,7 +125,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 190px;
+    right: 0;
     width: 107px;
     height: 205px;
     background-image: url("../img/equipment-5.png");
@@ -136,7 +138,7 @@
   content: "";
   position: absolute;
   top: 10px;
-  left: 210px;
+  right: 10px;
   width: 73px;
   height: 175px;
   background-image: url("../img/equipment-4.png");
@@ -162,7 +164,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 190px;
+    right: 0;
     width: 107px;
     height: 205px;
     background-image: url("../img/equipment-5.png");

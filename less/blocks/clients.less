@@ -3,24 +3,27 @@
 }
 
 .clients__wrapper {
-  .container();
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 81%;
+  min-width: 320px;
   min-height: 620px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
 .clients__title {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 100px;
   padding-top: 55px;
-  padding-left: 90px;
   font-style: normal;
   font-weight: 400;
   font-size: 21.34px;
   line-height: auto;
   color: @lightblack;
+  text-align: center;
   background-color: @lightgrey;
   box-sizing: border-box;
 }
@@ -137,14 +140,16 @@
 
 .clients__button {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 125px;
-  padding-left: 125px;
+  text-align: center;
   text-decoration: none;
 }
 
 .clients__more {
-  margin-left: 15px;
+  position: relative;
+  left: 50%;
+  margin-left: -20px;
 }
 
 .clients__text {
